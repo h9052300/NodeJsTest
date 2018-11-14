@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>選擇排序</title>
+</head>
+<body>
+<script>
+    let a, b, c, temp;
+    a = +(window.prompt('請輸入第一個數字'));
+    b = +(window.prompt('請輸入第二個數字'));
+    c = +(window.prompt('請輸入第三個數字'));
+
+    // 比較
+    if (a > b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+
+    if (a > c) {
+        temp = a;
+        a = c;m
+        c = temp;
+    }
+
+    if (b > c) {
+        temp = b;
+        b = c;
+        c = temp;
+    }
+
+    alert(a + " , " + b + " , " + c);
+</script>
+</body>
+</html>

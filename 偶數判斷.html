@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>偶數判斷</title>
+</head>
+<body>
+<script>
+    <!--從鍵盤輸入一個整數，判斷是否為偶數，如果是就輸出YES，否則輸出NO-->
+
+    let temp = +(window.prompt("請輸入一個整數 : "));
+    if (isNaN(temp)) {
+        alert("輸入的內容有誤!");
+    } else {
+        (temp % 2 == 0) ? alert('YES') : alert('NO');
+    }
+
+</script>
+</body>
+</html>

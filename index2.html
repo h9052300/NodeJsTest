@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 使用從鍵盤輸入3個整數，找到最大值並輸出
+
+    // 1.定義3個變數，接受使用者輸入的值
+    var num1, num2, num3;
+
+    // 2. 利用prompt()接收使用者輸入的值
+    num1 = Number(prompt('請輸入第一個數 : '));
+    num2 = Number(prompt('請輸入第二個數 : '));
+    num3 = Number(prompt('請輸入第三個數 : '));
+
+    // 3.定義保存最大值的變數
+    var max;
+
+    // 4. 利用三元運算子進行兩兩相比
+    max = num1 > num2 ? num1 : num2;
+    max = max > num2 ? max : num3;
+
+    // 5. 輸出結果
+    console.log(max);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>選大數</title>
+</head>
+<body>
+<script>
+    let num1, num2, max;
+
+    num1 = +(window.prompt('請輸入第一個整數 : '));
+    num2 = +(window.prompt('請輸入第二個整數 : '));
+
+    if (!isNaN(num1) && !isNaN(num2)) {
+        max = (num1 > num2) ? num1 : num2;
+        alert(max);
+    } else {
+        alert('輸入有誤!');
+    }
+
+</script>
+</body>
+</html>
