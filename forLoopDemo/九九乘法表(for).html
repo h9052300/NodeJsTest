@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九九乘法表(for)</title>
+    <style>
+        span {
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<script>
+    for (let i = 0; i <= 9; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("<span>" + i + " * " + j + " = " + (i * j) + "\t" + "</span>");
+        }
+        document.write("<br/>");
+    }
+</script>
+</body>
+</html>
