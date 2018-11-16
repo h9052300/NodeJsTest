@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去0存新</title>
+</head>
+<body>
+<script>
+    let arr = ['王武', 18, 0, '男', 0, 1891];
+    let newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+            newArr[newArr.length] = arr[i];
+        }
+    }
+
+    console.log(newArr);
+</script>
+</body>
+</html>

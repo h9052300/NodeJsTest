@@ -8,8 +8,29 @@
 <script>
     // 求一陣列中的最大值和最小值，以及所在位置
 
+    // 1.定義變數
+    let numArr = [1, 99, 88, -110, 77, 5555];
+    let maxValue = numArr[0], minValue = numArr[0];
+    let maxIndex = 0, minIndex = 0;
 
+    for (let i = 1; i < numArr.length; i++) {
+        // 如果陣列中的元素大於我們定義的初始值
+        if (numArr[i] > maxValue) {
+            // 就把這個元素賦值給最大值，並改變索引
+            maxValue = numArr[i];
+            maxIndex = i;
+        }
 
+        if (numArr[i] < minValue) {
+            minValue = numArr[i];
+            minIndex = i;
+        }
+    }
+
+    console.log("maxIndex : " + maxIndex);
+    console.log("maxValue : " + maxValue);
+    console.log("minIndex : " + minIndex);
+    console.log("minValue : " + minValue);
 </script>
 </body>
 </html>
