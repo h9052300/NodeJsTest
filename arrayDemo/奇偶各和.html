@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奇偶各和</title>
+</head>
+<body>
+<script>
+    let evenSum = 0;
+    let oddSum = 0;
+
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 === 0) { //偶數
+            evenSum += i;
+        } else {
+            oddSum += i;
+        }
+    }
+    console.log("偶數和 : " + evenSum);
+    console.log("奇數和 : " + oddSum);
+</script>
+</body>
+</html>
