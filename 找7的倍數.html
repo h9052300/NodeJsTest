@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找7的倍數</title>
+</head>
+<body>
+<script>
+    // 取得1~100之間7的倍數並輸出，且統計個數
+    let count = 1;
+    let num = 0;
+
+    while (count <= 100) {
+        if (count % 7 === 0) {
+            console.log("count = " + count);
+
+            // 計數器
+            num++;
+        }
+
+        // 數量++
+        count++;
+    }
+    console.log("num = " + num);
+</script>
+</body>
+</html>

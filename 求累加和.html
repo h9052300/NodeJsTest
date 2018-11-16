@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求累加和</title>
+</head>
+<body>
+<script>
+    // 1.定義變數，記錄所有的值
+    let sum = 0;
+    let total = +(window.prompt("請輸入一個0~5的值，進行累加"));
+    let number = 1;
+
+    // 2.定義變數保存的遞增值
+    if (!isNaN(total) && total > 0) {
+        while (number <= total) {
+            // document.write("sum = " + sum + ", number = " + number);
+
+            sum += number;
+            number++;
+        }
+        document.write(sum);
+    } else {
+        document.write("不要亂打喔!");
+    }
+
+</script>
+</body>
+</html>
