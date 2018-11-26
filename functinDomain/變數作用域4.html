@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>變數作用域4</title>
+</head>
+<body>
+<script>
+    f2();
+    console.log(c);
+    console.log(b);
+    console.log(a); //外面接觸不到區域變數，會報錯!
+
+    function f2() {
+        let a = b = c = 9; //只有a是區域變數，b與c都是全域變數
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+
+
+</script>
+</body>
+</html>

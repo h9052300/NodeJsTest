@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>節點關係</title>
+</head>
+<body>
+<div id="box">
+    <button class="btn">按鈕</button>
+    <span id="span">
+        <a href="#">Google</a>
+    </span>
+</div>
+<script>
+    window.onload = function () {
+        var a = document.getElementsByTagName("a")[0];
+        var parentNode = a.parentNode.parentNode;
+        console.log(parentNode);
+    };
+</script>
+</body>
+</html>

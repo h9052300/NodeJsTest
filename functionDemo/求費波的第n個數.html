@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求費波的第n個數</title>
+</head>
+<body>
+<!--1 1 2 3 5 8 13 21...-->
+
+<script>
+    function f1(n) {
+        if (n === 1 || n === 2) {
+            return 1;
+        }
+        return f1(n - 1) + f1(n - 2);
+    }
+
+    let num = +(prompt('請輸入一個整數'));
+    console.log(f1(num));
+
+</script>
+</body>
+</html>

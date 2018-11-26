@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>構造函數</title>
+</head>
+<body>
+<script>
+    function Dog(option) {
+        this.name = option.name;
+        this.age = option.age;
+        this.dogFriends = option.dogFriends;
+
+        this.eat = function (someThing) {
+            console.log(this.name + "在吃" + someThing);
+        };
+
+        this.run = function (someWhere) {
+            console.log(this.name + "跑" + someWhere);
+        };
+
+        this.together = function (someBody) {
+            console.log(this.name + '跟' + someBody + '一起去吃飯');
+        };
+    }
+
+    //小狗
+    let smallDog = new Dog({name: '阿狗寶', age: 3});
+    smallDog.age = 10;
+    console.log(smallDog.name + "牠" + smallDog.age + "歲嚕~");
+    console.log(smallDog.eat('骨頭'));
+    console.log(smallDog.run('四號公園'));
+
+    // 大狗
+    let bigDog = new Dog({name: '呆頭狗', age: 15, dogFriends: ['大大', '小小', '肥肥']});
+    bigDog.together(['大大', '小小', '肥肥']);
+</script>
+</body>
+</html>

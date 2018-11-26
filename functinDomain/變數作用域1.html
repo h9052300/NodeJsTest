@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>變數作用域</title>
+</head>
+<body>
+<script>
+    var color = "yellow";
+
+    function getColor() {
+        let anotherColor = "red";
+
+        function swapColor() {
+            let tempColor = color; //tempColor=黃色
+            color = anotherColor; //color=紅色
+            anotherColor = tempColor; //anotherColor=黃色
+        }
+
+        swapColor();
+    }
+
+    getColor();
+    console.log(color); //紅色
+</script>
+</body>
+</html>

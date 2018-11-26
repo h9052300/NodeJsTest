@@ -1,3 +1,5 @@
+// 服務啟動模組
+
 let http = require('http');
 let router = require('./router');
 let server = http.createServer();

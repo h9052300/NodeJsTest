@@ -1,3 +1,5 @@
+// 請求處理模組
+
 let fs = require('fs');
 let oper = require('./operation');
 

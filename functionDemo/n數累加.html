@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>n數累加</title>
+</head>
+<body>
+<script>
+    function getSum(n) {
+        if (1 === n) {
+            return 1;
+        }
+        return n + getSum(n - 1);
+    }
+
+    document.write(getSum(100));
+</script>
+</body>
+</html>

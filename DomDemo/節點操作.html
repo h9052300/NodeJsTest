@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>節點操作</title>
+    <style>
+        #box {
+            width: 600px;
+            height: 600px;
+            background-color: #666666;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <button class="btn">按鈕</button>
+    <span id="span">
+        <a href="#">Google</a>
+    </span>
+    <p class="my">我是大頭</p>
+    <div>哈哈哈</div>
+</div>
+
+<script>
+    window.onload = function () {
+        // CRUD
+
+        let box = document.getElementById('box');
+
+        // 1.創建節點
+        let img = document.createElement('img');
+        img.src = "Capture001.png";
+        box.appendChild(img);
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子改父顏色</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <button class="btn">按鈕</button>
+    <span id="span">
+        <a href="#">Google</a>
+    </span>
+    <p class="my">我是大頭</p>
+    <div>哈哈哈</div>
+</div>
+
+<script>
+    /*window.onload = function () {
+
+        let btn = document.getElementById('btn');
+        btn.onclick = function () {
+            let span = document.querySelectorAll('#span');
+            let box = span.parentNode;
+            box.style.backgroundColor = "red";
+        }
+    };*/
+
+    /*window.onload = function () {
+        // 1.取得標籤
+        let box = document.getElementById('box');
+        // 2.獲取所有子節點
+        let allNodeList = box.childNodes;
+        console.log(allNodeList);
+
+        let newList = [];
+        for (let i = 0; i < allNodeList.length; i++) {
+            let node = allNodeList[i];
+            if (node.nodeType === 1) {
+                newList.push(node);
+            }
+        }
+        console.log(newList);
+    };*/
+
+    /*window.onload = function () {
+        let box = document.getElementById('box');
+        let nodeList = box.children;
+        console.log(nodeList);
+
+    };*/
+
+    window.onload = function () {
+        let my = document.getElementsByClassName('my')[0];
+        console.log(my.parentNode.children[1]);
+    };
+</script>
+</body>
+</html>

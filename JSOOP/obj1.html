@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>obj1</title>
+</head>
+<body>
+<script>
+    var dog = {
+        // 屬性
+        name: '旺財',
+        age: 10,
+        dogFriends: ['飛毛腿', '小花', '球球'],
+
+        // 方法
+        eat: function () {
+            document.write('吃骨頭');
+        },
+        run: function () {
+            console.log('衝啊~');
+        }
+    };
+
+    // console.log(dog);
+
+    for (let key in dog) {
+        console.log(key);
+
+        console.log(dog[key]);
+    }
+</script>
+</body>
+</html>
